@@ -37,7 +37,7 @@ export default function Footer() {
         <h3>Explore the BBC</h3>
       </div>
       <div className={footer.footerLinks}>
-          {footerLinks.map((link,i)=>{
+          {footerLinks.map((link,i)=>(
            <p className={
             active === link.link ? footer.activeFooterLink : footer.footerLink 
            }
@@ -49,7 +49,7 @@ export default function Footer() {
            key={i}
            onMouseEnter={() => setActive(link.link)}
            onMouseLeave={() => setActive()}>{link.link}</p>
-          })}
+          ))}
 
       </div>
       <hr></hr>
